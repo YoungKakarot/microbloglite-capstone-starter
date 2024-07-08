@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register .exe</title>
+    <link rel="stylesheet" href="./Register.css"
+</head>
+<body>
+    
+    <header>
+        <h1>[Register .Exe]</h1>
+    </header>
+
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="posts/index.html">Posts</a>
+            <a href="posts/profile.html">Profile</a>
+          </div>
+          
+          <button class="openbtn" onclick="openNav()">&#9776; LOST? </button>
+
+          <form action="action_page.php">
+            <div class="container">
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+          
+              <label for="username"><b>User Name</b></label>
+              <input type="text" placeholder="Enter Username" name="user" id="user" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+          
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+          
+            <div class="container signin">
+              <p>Already have an account? <a href="index.html">Sign in</a>.</p>
+            </div>
+          </form>
+          
+</body>
+<script src="./Register.js"></script>
+<script src="./auth.js"></script>
+</html>

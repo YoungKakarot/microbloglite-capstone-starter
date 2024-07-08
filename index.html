@@ -18,7 +18,7 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="./landing.css">
 
-    <title>Login to the Microblog Network!</title>
+    <title>Login to .exe</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
     <script src="./auth.js"></script>
@@ -29,25 +29,36 @@
 <body>
 
     <header>
-        <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
+        <h1>[Welcome .Exe]</h1>
     </header>
 
     <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="register.html">Sign Up</a>
+            <a href="posts/index.html">Posts</a>
+            <a href="posts/profile.html">Profile</a>
+          </div>
+          
+          <button class="openbtn" onclick="openNav()">&#9776; LOST? </button>
 
-        <form id="login">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" minlength="3">
-            </div>
+        <form id="login">            
 
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" minlength="6">
-            </div>
-
-            <button id="loginButton" type="submit">Login</button>
-        </form>
-
+            <p>User ID:</p><input class="text" type="text" name="username" id="username" size="25" placeholder="night_owl117">
+            <br>
+            <p>PassWord:</p>
+            <input class="text" type="password" size="25" name="password" id="password" placeholder="••••••••••••">
+            <br>
+            <!-- <button class="button" onclick="window.location.href='/'">Login</button> -->
+             <input type="submit" value="login" name="loginButton" id="loginButton">
+            </form>
+            
+            
+            <p class="descp"><b>NOTE:</b> To login you have to have an invite from an existing user. There is no use in trying to beg, ask/request for an invite, we choose our new members with care.
+            </p>
+            
+            <br>
+            <br>
     </main>
 
     <footer></footer>

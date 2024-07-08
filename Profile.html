@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile .exe</title>
+    <link rel="stylesheet" href="./Profile.css" 
+</head>
+<body>
+    <header>
+        <h1>[Profile .Exe]</h1>
+    </header>
+
+    <main>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:logout()">Log Out</a>
+            <a href="posts/index.html">Posts</a>
+          </div>
+          
+          <button class="openbtn" onclick="openNav()">&#9776; LOST? </button>
+   
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>[DJongo Unchained]</h1>
+            <p>Bounty Hunter & Street Samurai</p>
+        </div>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Profile Image">
+            </div>
+            <div class="profile-details">
+                <h2>About Me</h2>
+                <p>Hello! I'm Jon, a passionate web developer and blogger. I love sharing my knowledge and experiences through my blog.</p>
+            </div>
+        </div>
+        <div class="blog-posts">
+            <h2>Favroites</h2>
+            <div class="post">
+                <h3>Post Title 1</h3>
+                <p>Post description...</p>
+            </div>
+            <div class="post">
+                <h3>Post Title 2</h3>
+                <p>Post description...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./Profile.js"></script>
+<script src="../auth.js"></script>
+</html>

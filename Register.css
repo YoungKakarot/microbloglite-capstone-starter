@@ -1,5 +1,5 @@
 body {
-    background: url('/Images/Backgroundgif.gif') no-repeat center center fixed;
+    background: url('/Images/Regbackground.gif') no-repeat center center fixed;
     background-size: cover;
     color: #000000;
     letter-spacing: 8px;
@@ -118,3 +118,65 @@ button.button {
   .openbtn:hover {
     background-color: #444;
   }
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100px;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    letter-spacing: 4px;
+    transition: color 0.5s ease-out, border-color 0.5s ease-out;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    line-height: 16px;
+    margin-bottom: 100px;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
